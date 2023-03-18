@@ -38,6 +38,10 @@ dependencies:
   cupertino_icons: ^1.0.2
   get: ^4.6.5
   google_fonts: ^3.0.1
+  firebase_core: ^2.3.0
+  firebase_auth: ^4.1.4
+  cloud_firestore: ^4.1.0
+  flutter_smart_dialog: ^4.7.1
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is

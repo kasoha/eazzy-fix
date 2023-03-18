@@ -1,4 +1,4 @@
-# kijana_imara
+# eazzy_fix
 
 A new Flutter project.
 

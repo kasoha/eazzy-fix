@@ -1,41 +1,59 @@
+import 'package:eazzy_fix/screen/profile.dart';
+import 'package:eazzy_fix/screen/splash_screen.dart';
+import 'package:flutter/cupertino.dart';
+import 'package:eazzy_fix/screen/job_opening.dart';
 import 'package:eazzy_fix/screen/comment.dart';
 import 'package:eazzy_fix/screen/employer_dashboard.dart';
-import 'package:eazzy_fix/screen/home_page.dart';
-import 'package:eazzy_fix/screen/job_opening.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
-class Profile extends StatelessWidget {
-  const Profile({super.key});
+class HomePage extends StatelessWidget {
+  const HomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.lightGreenAccent,
       appBar: AppBar(
+        title: Text('EAZZY FIX JOB SEARCH'),
+        elevation: 0,
         backgroundColor: Colors.lightGreenAccent,
-        title: Text("PROFILE"),
+        automaticallyImplyLeading: false,
         leading: IconButton(
-          icon: Icon(Icons.filter_vintage),
-          onPressed: () => Navigator.pop(context),
+          color: Colors.redAccent,
+          icon: Icon(
+            CupertinoIcons.person_crop_circle,
+          ),
+          onPressed: () {
+            Navigator.of(context)
+                .push(MaterialPageRoute(builder: (context) => const Profile()));
+          },
         ),
       ),
-      body: Padding(
-        padding: EdgeInsets.all(25),
+      body: Container(
         child: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            IconButton(
-              icon: Icon(
-                CupertinoIcons.profile_circled,
-                color: Colors.redAccent,
-                size: 56,
+            Expanded(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  Text(
+                    "WELCOME",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 30,
+                      color: Colors.lightGreenAccent,
+                    ),
+                  ),
+                ],
               ),
-              onPressed: () {},
             ),
           ],
         ),
       ),
+      //SPACE
+
+      //BOTTOM NAVBAR
+
       bottomNavigationBar: BottomAppBar(
         color: Colors.lightGreenAccent,
         shape: CircularNotchedRectangle(),

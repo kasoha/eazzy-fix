@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "212960243876",
+    "project_id": "eazzy-fix",
+    "storage_bucket": "eazzy-fix.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:212960243876:android:e1b5289122dfd850633631",
+        "android_client_info": {
+          "package_name": "com.example.kijana_imara"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "212960243876-bhti3qc118j2eb7f89usoa0fvm44nus9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNKt5uLFmhXQacAj40fzhijIufOJsTG8k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "212960243876-bhti3qc118j2eb7f89usoa0fvm44nus9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
